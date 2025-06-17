@@ -10,14 +10,17 @@ This project models and forecasts US Treasury bond yields using macroeconomic in
 - Time-series-aware train-test split (80/20 time split to account for trends)
 - Actual vs Predicted visualizations (Using metrics such as RMSE and R^2 Squared, and plotting the actual vs predicted values)
 
+## Data
+- Source - Fred API (https://fred.stlouisfed.org/docs/api/fred/), US Department of Treasury (https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2025) 
+- There is use of linear interpolation for getting monthly GDP, Trade Deficit and Consumer Sentiment data.
 
-## 🗂 Files
+##  Files
 - `yield_modeling_final.py` — The main Python script
 - `final_data_with_all_yields.csv` — Input data (local only)
 - `yield_predictions_comparison.csv` — Output file with actual vs predicted values
 - `plots/` — Folder containing PNG plots of yield predictions
 
-## ▶️ How to Run
+## ▶ How to Run
 ```bash
 pip install -r requirements.txt
 python yield_modeling_final.py
